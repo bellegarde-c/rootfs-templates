@@ -1,0 +1,6 @@
+Architectures: arm64
+Components: main
+Suites: trixie
+Uris: http://adishatz.org/apt
+Types: deb
+Signed-By: /var/lib/extrepo/keys/adishatz.asc

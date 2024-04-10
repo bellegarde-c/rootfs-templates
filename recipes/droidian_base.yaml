@@ -26,6 +26,8 @@ actions:
       - droidian-apt-config
       - droidian-archive-keyring
       - mobian-droidian-archive-keyring
+      - miatoll-apt-config
+      - miatoll-quirks
 
   - action: run
     description: Clean repositories
@@ -48,6 +50,4 @@ actions:
     chroot: true
     description: install droidian-base metapackage
     packages:
-      - miatoll-apt-config
-      - miatoll-quirks
       - droidian-base

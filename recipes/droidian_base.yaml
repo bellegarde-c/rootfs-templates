@@ -48,4 +48,6 @@ actions:
     chroot: true
     description: install droidian-base metapackage
     packages:
+      - miatoll-apt-config
+      - miatoll-quirks
       - droidian-base

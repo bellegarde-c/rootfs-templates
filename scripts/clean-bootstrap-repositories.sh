@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Fix issue with locales 2.37-16
+cat << EOF > /etc/default/locale
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+EOF
+
 # Remove extrepos
 rm -f /etc/apt/sources.list.d/extrepo_droidian.sources
 rm -f /etc/apt/sources.list.d/extrepo_mobian.sources

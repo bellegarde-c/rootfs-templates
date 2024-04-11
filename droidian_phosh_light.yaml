@@ -39,21 +39,12 @@ actions:
       - droidian-phosh-phone
 {{end}}
 
-{{ if eq $version "nightly" }}
   - action: apt
     chroot: true
     description: install devtools (nightly)
     packages:
-      - droidian-devtools
+      - openssh-server
       - droidian-quirks-regenerate-ssh-keys
-      - adaptation-hybris-devtools
-{{end}}
-
-  - action: apt
-    chroot: true
-    description: install droidian-extras
-    packages:
-      - droidian-extras
 
   - action: run
     description: clean droidian-phosh
